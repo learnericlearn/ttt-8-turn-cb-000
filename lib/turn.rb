@@ -5,6 +5,7 @@ def turn(board)
   if valid_move?(board, i_to_i)
     puts "valid move"
     move(board, i_to_i, token = "X")
+    display_board(board)
   else
     turn(board)
   end
